@@ -4,8 +4,6 @@ from Cython.Distutils import build_ext
 import os
 import platform
 
-print platform.system()
-
 if platform.system() == 'Darwin':
 	os.environ['CFLAGS'] = "-framework IOKit -framework CoreFoundation"
 	os.environ['LDFLAGS'] = ""
